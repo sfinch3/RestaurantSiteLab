@@ -4,8 +4,45 @@
 
                 <meta charset="UTF-8".>
                 <link rel="stylesheet" href="css/bootstrap.min.css">
-
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Restaurant- Menu- Version 6</title>
+                <!-- Latest compiled and minified CSS -->
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+              <!-- Optional theme -->
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <style>
+
+.carousel-caption {
+      height: 100px;
+      width: 100%;
+      margin-top: 20px;
+      padding: 25px 0px 0px 0px;
+      position: static;
+      background-color: rgb(230, 165, 32);
+      font-size: 2.1em;
+      font-style: italic;
+    }
+    .carousel-control {
+      margin-top: 20px;
+      padding-top: 35px;
+    }
+    .carousel-indicators .active {
+      width: 10px;
+      height: 10px;
+      margin: -20px;
+    }
+    .carousel-indicators li{
+      width: 7px;
+      height: 7px;
+      margin: -20px;
+    }
+    .glyphicon-arrow-left {
+      color: white;
+    }
+    .glyphicon-arrow-right {
+      color: white;
+    }
 
             .menuTable{
                 width:90%;
@@ -36,11 +73,56 @@
 
             <header>
 
-                    <div class="jumbotron">
+                   <!-- <div class="jumbotron">
                             <h1>We're Opening in a New Location!!</h1>
                             <p>...</p>
                             <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-                        </div>
+                        </div>-->
+
+                        <div class="container-fluid">
+                                <div id="the-carousel" class="carousel slide" data-ride="carousel"><!-- class of slide for animation -->
+                            <!-- Indicators -->
+                                  <ol class="carousel-indicators">
+                                    <li data-target="#the-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#the-carousel" data-slide-to="1" ></li>
+                                    <li data-target="#the-carousel" data-slide-to="2" ></li>
+                                  </ol>
+                            <!-- Wrapper for slides -->
+                                  <div class="carousel-inner">
+                                    <div class="item active"><!-- class of active since it's the first item -->
+                                      <div class="carousel-caption">
+                                        <p>We are opening a new location!</p>
+                                      </div>
+                                    </div>
+                                    <div class="item">
+                                      <div class="carousel-caption">
+                                        <p>Come try our seasonal menu, with special options for this season.</p>
+                                      </div>
+                                    </div>
+                                    <div class="item">
+                                      <div class="carousel-caption">
+                                        <p>Our drink of the month is SG Special Brew.</p>
+                                      </div>
+                                    </div>
+                                  </div><!-- closes carousel-inner -->
+                                  
+                            <!-- Next and Previous controls listed below show href values that must reference the id for this carousel (The href value of the controls must match the id of the first div of the carousel above) -->
+                                  
+                                  <a class="carousel-control left" href="#the-carousel" data-slide="prev">
+                                    <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control right" href="#the-carousel" data-slide="next">
+                                    <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                  
+                                </div><!-- closes carousel -->
+                              </div><!-- closes container -->
+                              
+                              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                              <!-- Latest compiled and minified JavaScript -->
+                              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
                 <div>
                     <h1>Keep It Tasteful, Please</h1>
@@ -50,8 +132,8 @@
                 
                 <nav>
                         <ul class="nav nav-pills">
-                                <li role="presentation" ><a href="index.html"><i class="glyphicon glyphicon-home"></i></a></li>
-                                <li role="presentation"class="active"><a href="menu.html">Menu</a></li>
+                                <li role="presentation" class="active"><a href="index.html"><i class="glyphicon glyphicon-home"></i></a></li>
+                                <li role="presentation"><a href="menu.html">Menu</a></li>
                                 <li role="presentation"><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </nav>
@@ -61,6 +143,12 @@
             </header>
 
             <body>
+
+                    <noscript>
+                            <div style="border: 1px solid purple; padding: 10px">
+                              <span style="color:red">JavaScript is not enabled! This site is best viewed with JavaScript enabled.</span>
+                            </div>
+                    </noscript>
 
             <div style="background-color:chocolate ">
                     <div class="row">
