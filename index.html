@@ -2,6 +2,9 @@
     <html lang="en">
         <head>
 
+                <meta charset="UTF-8".>
+                <link rel="stylesheet" href="css/bootstrap.min.css">
+
             <style>
                 blockquote{
                     margin:auto;width:400px;border:2px solid black; padding:4px;
@@ -28,10 +31,15 @@
 
             <title>Steve Finch's Restaurant Site Lab</title>
         </head>
-
-        <body>
         
             <header>
+
+                    <div class="jumbotron">
+                            <h1>We're Opening in a New Location!!</h1>
+                            <p>...</p>
+                            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                        </div>
+
                 <div>
                     <h1 id="font">Keep It Tasteful, Please</h1>
                 </div>
@@ -39,24 +47,20 @@
                 <hr/>
                 
                 <nav>
-                    <table class="navTable">
-                        <tr>
-                            <td>
-                                <a href="index.html">Home</a>
-                            </td>
-                            <td>
-                                <a href="menu.html">Menu</a>
-                            </td>
-                            <td>
-                                <a href="contact.html">Contact Us</a>
-                            </td>
-                        </tr>
-                    </table>
-                </nav>
+                        <ul class="nav nav-pills">
+                                <li role="presentation" class="active"><a href="index.html"><i class="glyphicon glyphicon-home"></i></a></li>
+                                <li role="presentation"><a href="menu.html">Menu</a></li>
+                                <li role="presentation"><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
 
                 <hr/>
 
             </header>
+
+        <body>
+
+                    
 
             <div style="background:chocolate">
 

@@ -6,14 +6,13 @@ header,footer{
     width:15%
 }
 
+a{
+    text-decoration: none;
+    color:black
 }
 a:visited{
-    color:red; text-decoration: underline
+    color:red
 }
 a:hover{
     font-weight: bold
-}
-
-a:active{
-    text-decoration-line:none
 }
