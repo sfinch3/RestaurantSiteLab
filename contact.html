@@ -43,6 +43,10 @@
                 input[type="submit"]{
                     float:right;
                 }
+                
+                .required{
+                    font-weight: bold
+                }
 
             </style>
 
@@ -87,23 +91,23 @@
 
                 
                     <div>
-                        <label for="FullName" id="FullNameLabel">Name:</label> 
+                        <label class="required" for="FullName" id="FullNameLabel">Name:</label> 
                                 <input type="text" name="FullName" id="FullName" />
                     </div>
 
                     <div>
-                         <label for="Email" id="EmailLabel">Email:</label>
+                         <label class="required" for="Email" id="EmailLabel">Email:</label>
                                 <input type="text" name="Email" id="Email" />
                     </div>
 
 
                     <div>
-                        <label for="Phone" id="PhoneLabel">Phone:</label>
+                        <label class="required" for="Phone" id="PhoneLabel">Phone:</label>
                                 <input type="text" name="Phone" id="Phone" />
                     </div>
                     
                     <div>
-                        <label for="Reason" id="ReasonLabel">Reason for Inquiry:</label>
+                        <label class="required" for="Reason" id="ReasonLabel">Reason for Inquiry:</label>
                                 <select name="Reason">
                                         <option value="selectAReason">Catering</option>
                                         <option value="softwareSupport">Private Party</option>
@@ -133,7 +137,7 @@
                     </div>
 
                     <div>
-                        <input type="submit" value="SendRequest"/><br/><br/>
+                        <input class="required" type="submit" value="SendRequest"/><br/><br/>
                     </div>
                  </form>
 

@@ -1,7 +1,19 @@
 header,footer{
-    text-align: center
+    text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 .navTable{
     width:15%
+}
+
+a{
+    text-decoration: none
+}
+
+a:visited{
+    color: red
+}
+
+a:hover{
+    font-weight: bold
 }
