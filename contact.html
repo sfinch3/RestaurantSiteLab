@@ -1,132 +1,152 @@
 <DOCTYPE html>
     <html lang="en">
         <head>
+
+            <style>
+
+                .container{
+                    width:100%;
+                    max-width: 600px;
+                    margin-left: 100;
+                }
+
+                form{
+                    margin-bottom: 20px;
+                }
+                
+                          
+                label{
+                    float: left;
+                    width: 300px;
+                    text-align: right;
+                    padding-right: 12px;
+                    margin-top: 12px;
+                    clear:left
+                }
+
+                input,
+                textarea, select{
+                    margin-top: 12px;
+                    
+                }
+
+                input[type="checkbox"]{
+                    margin:10px;
+                }
+
+                input[type="text"],
+                select,
+                textarea{
+                    width: 280px;
+                }
+
+                input[type="submit"]{
+                    float:right;
+                }
+
+            </style>
+
+            <link href="restaurantStyles.css" 
+            rel="stylesheet" 
+            type="text/css" />
+
             <title>Steve Finch's Restaurant Site Lab</title>
         </head>
 
         <body>
-            <div style="text-align: center">
-                <h1>Keep It Tasteful, Please</h1>
-            </div>
 
-            <hr/>
-            
-            <nav>
-                <table style="text-align: center" width="15%">
-                    <tr>
-                        <td>
-                            <a href="index.html">Home</a>
-                        </td>
-                        <td>
-                            <a href="menu.html">Menu</a>
-                        </td>
-                        <td>
-                            <a href="contact.html">Contact Us</a>
-                        </td>
-                    </tr>
-                </table>
-            </nav>
+            <header>
+                <div>
+                    <h1>Keep It Tasteful, Please</h1>
+                </div>
 
-            <hr/>
-
-            <form action="#" method="POST">
-                <table style="margin-left:100px" cellspacing=15px>
-                    <tr>
-                        <td style="text-align: right;">
-                            <label for="FullName" id="FullNameLabel">Name: </label>
-                        </td>
-                        <td>
-                            <input size=38 type="text" name="FullName" id="FullName" /> 
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                    </tr>
-
-                    <tr>
-                        <td style="text-align: right;">
-                            <label for="Email" id="EmailLabel">Email:</label>
-                        </td>
-                        <td>
-                            <input size=38 type="text" name="Email" id="Email" /> 
-                        </td>
-                    </tr>
-
-                    <tr>                            
-                    </tr>
-
-                    <tr>
-                        <td style="text-align: right;">
-                            <label for="Phone" id="PhoneLabel">Phone:</label>
-                        </td>
-                        <td>
-                            <input size=38 type="text" name="Phone" id="Phone" /> 
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td style="text-align: right;">
-                            <label for="Reason" id="ReasonLabel">Reason for Inquiry:</label>
-                        </td>
-                        <td>
-                            <select style="width:300px" name="Reason">
-                                <option value="selectAReason">Catering</option>
-                                <option value="softwareSupport">Private Party</option>
-                                <option value="hardwareSupport">Feedback</option>
-                                <option value="informationRequest">Other</option>
-                            </select>
-                        </td>
-                    <tr>
-                    </tr>
-
-                    <tr></tr>
-                    
+                <hr/>
+                
+                <nav>
+                    <table>
                         <tr>
-                            <td style="text-align: right;vertical-align:top;">
-                                <label for="AdditionalInformation" id="AdditionalInformationLabel">Additional Information:</label>
+                            <td>
+                                <a href="index.html">Home</a>
                             </td>
                             <td>
-                                <textarea rows=7 cols=40 id="AdditionalInformation" name="AdditionalInformation"></textarea>
+                                <a href="menu.html">Menu</a>
+                            </td>
+                            <td>
+                                <a href="contact.html">Contact Us</a>
                             </td>
                         </tr>
+                    </table>
+                </nav>
 
-                    <tr>
-                            <td style="text-align: right;" >
-                                <label for="Visited" id="VisitedLabel">Have you been to the restaurant?</label>
-                            </td>
-                            <td>
+                <hr/>
+            </header>
+
+            <div class="container">
+            
+            <form action="#" method="POST">
+
+                
+                    <div>
+                        <label for="FullName" id="FullNameLabel">Name:</label> 
+                                <input type="text" name="FullName" id="FullName" />
+                    </div>
+
+                    <div>
+                         <label for="Email" id="EmailLabel">Email:</label>
+                                <input type="text" name="Email" id="Email" />
+                    </div>
+
+
+                    <div>
+                        <label for="Phone" id="PhoneLabel">Phone:</label>
+                                <input type="text" name="Phone" id="Phone" />
+                    </div>
+                    
+                    <div>
+                        <label for="Reason" id="ReasonLabel">Reason for Inquiry:</label>
+                                <select name="Reason">
+                                        <option value="selectAReason">Catering</option>
+                                        <option value="softwareSupport">Private Party</option>
+                                        <option value="hardwareSupport">Feedback</option>
+                                        <option value="informationRequest">Other</option>
+                                    </select>
+                    </div>
+
+                    <div>
+                        <label for="AdditionalInformation" id="AdditionalInformationLabel">Additional Information:</label>
+                                <textarea rows=7 id="AdditionalInformation" name="AdditionalInformation"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="Visited" id="VisitedLabel">Have you been to the restaurant?</label>
                                 <input type="radio" name="Visited" value="no" checked/>No
                                 <input type="radio" name="Visited" value="yes"/>Yes
-                            </td>
-                    </tr>
-                    
-                    <tr>
-                    </tr>
+                    </div>
 
-                    <tr>
-                            <td style="text-align: right;">
-                                <label for="BestDays" id="BestDaysLabel">Best days to contact you:</label>
-                            </td>
-                            <td style="text-align:justify;">
+                    <div>
+                        <label for="BestDays" id="BestDaysLabel">Best days to contact you:</label>
                                 <input type="checkbox" name="BestDays" value="Monday">M
                                 <input type="checkbox" name="BestDays" value="Tuesday">T
                                 <input type="checkbox" name="BestDays" value="Wednesday">W
                                 <input type="checkbox" name="BestDays" value="Thursday">Th
                                 <input type="checkbox" name="BestDays" value="Friday">F
-                                
-                            </td>
-                    </tr>
-                    
-                    <tr>
-                            <td>
-                            </td>
-                            <td style="text-align: right">
-                                <input type="submit" value="SendRequest"/>
-                            </td>
-                    </tr>
+                    </div>
 
-                </table>                                      
+                    <div>
+                        <input type="submit" value="SendRequest"/><br/><br/>
+                    </div>
+                 </form>
+
+            </div>
+                            
             </form>
+        </body>
+
+        <footer>
+                <hr/>
+                <h3><p>123 Hoo Doo Lane, Hootin Holler, KY, 45678<br/><br/>(123) 456-7890</p></h3>
+        </footer>
+
     </html>
 </DOCTYPE>
 
